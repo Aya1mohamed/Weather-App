@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg p-4">
+        <div class="container-fluid d-flex align-items-center">
+          
+          <!-- Logo and tagline on the left -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./images/logo.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top">
+            <div class="ms-3 text-white">
+              <strong>Weather</strong>
+              <p class="mb-0" style="font-size: 12px;">Tagline goes here</p>
+            </div>
+          </a>
+      
+          <!-- Navbar toggler for smaller screens -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Collapse content (nav links) pushed to the right -->
+          <div class="collapse navbar-collapse justify-content-around " id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item px-3 homee">
+                <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="#">News</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="#">Photos</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="container "></div>
+            <form  class="search p-5 d-flex justify-content-center align-items-center ">
+               <input class="input1 w-75 p-2 text-white" type="text" placeholder="Find your location..." id="search">
+               <input class="input2 px-3 py-2 text-white" type="button" value="Find" id="submit">
+           </form>
+       </div>
+   </div>
+
+
+   <div class="forecast-table">
+        <div class="container">
+            <div class="forecast-container d-flex row " id="forecast">
+                <div class="item col-md-4 rounded-4 my-3  ">
+                    <div class="item-head d-flex justify-content-between p-2 rounded-4" id="todayDate">
+                        <p id="dayName">Sunday</p>
+                        <span>
+                         <span id="todayDayNum">30</span>
+                         <span id="todayDateMonth">May</span>
+                        </span>
+                    </div>
+                    <div class="item-content p-3" id="today">
+                        <p class="" id="todayLocation"></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class=" todayTemp fs-2 fw-bold">
+                                <span id="todayTemp"></span>
+                                <span><sup>o</sup>C</span>
+                            </span>
+                            <img src="" alt="" id="todayImg">
+                        </div>
+                        <p id="todayConText" class="text-info"></p>
+
+                    </div>
+                    <div class="item-footer p-3 d-flex">
+                        <div class="d-flex p-3">
+                            <img src="./images/icon-umberella.png" class="me-2" alt="">
+                            <p id="humidity">20</p>
+                        </div>
+                        <div class="d-flex p-3">
+                            <img src="./images/icon-wind.png" class="me-2" alt="">
+                            <p id="wind">30 km/h</p>
+                        </div>
+                        <div class="d-flex p-3">
+                            <img src="./images/icon-compass.png" class="me-2" alt="">
+                            <p id="windDir">NNE</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="item col-md-4 rounded-4 my-3 ">
+                    <div id="tomorrowDate " class="item-head p-2 rounded-4">
+                        <p class="tom-day-name text-center"></p>
+                    </div>
+                    <div class="p-2 d-flex flex-column justify-content-center align-items-center" id="tomorrow">
+                        <img src="" class="tom-day-img m-2" alt="">
+                        <span>
+                            <span class="tom-max"></span>
+                            <span><sup>o</sup>C</span>
+                        </span>
+                        <span>
+                            <span class="tom-min"></span>
+                            <span><sup>o</sup></span>
+                        </span>
+                        <p class="tom-text text-info"></p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item col-md-4 rounded-4 my-3">
+                    <div class="item-head p-2 rounded-4">
+                        <p class="tom-day-name text-center"></p>
+                    </div>
+                    <div class="p-2 d-flex flex-column justify-content-center align-items-center" id="tomorrow">
+                        <img src="" class="tom-day-img m-2" alt="">
+                        <span>
+                            <span class="tom-max"></span>
+                            <span><sup>o</sup>C</span>
+                        </span>
+                        <span>
+                            <span class="tom-min"></span>
+                            <span><sup>o</sup></span>
+                        </span>
+                        <p class="tom-text text-info"></p>
+
+                    </div>
+
+                </div>
+            
+           </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<footer>
+       <div class="container footer d-flex flex-row "></div>
+
+
+            <div class="">
+
+              <form  class="footer1 p-5  ">
+                 <input class="input1 w-50 p-2" type="text" placeholder="Enter your email to subscribe...">
+                 <input class="input2 px-3 py-2 text-white" type="button" value="subscribe" >
+              </form>     
+
+            </div>
+ 
+                <div class="social-links d-flex justify-content-center align-items-center  ">
+                    <a href="#"><i class="fa-brands fa-facebook fs-4 p-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fs-4 p-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus fs-4 p-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest fs-4 p-2"></i></a>
+                </div>
+            
+       
+         <p class="text-white py-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p> 
+
+        </div>    
+</footer>
+
+ 
+
+
+
+
+
+
+
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script> 
+   <script src="./js/index.js"></script>
+
+</body>
+</html>

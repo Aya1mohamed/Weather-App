@@ -1,0 +1,40 @@
+nav{
+    background-color: #1e202b;
+
+}
+.collapse ul li:hover , .homee {
+    border: 2px solid blue;
+    border-radius: 30px;
+    
+}
+.main{
+    background-image: url('../images/banner.png');
+}
+.search{
+    height: 60vh;
+}
+
+ .input1{
+    border: 2px solid #1e202b;
+    border-radius: 100px;
+    background-color: #1e202b;
+}
+ .input2{
+    border: 2px solid #009ad8;
+    border-radius: 100px;
+    background-color: #009ad8;
+}
+
+footer , .item-head{
+    background-color: #262936;
+    color: white;
+
+}
+.item{
+    background-color: #1e202b;
+    color: white;
+}
+
+.forecast-table {
+    background-color: #2f323f;
+}
